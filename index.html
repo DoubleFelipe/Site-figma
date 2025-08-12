@@ -7,28 +7,35 @@
     <title>Loja de Tênis</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="top-bar">
-            <img src="site figma/tenis-logo.png" alt="Logo Tênis" class="logo">
-            <input type="text" placeholder="Pesquisar...">
-            <button class="suporte">SUPORTE</button>
+            <a href="index.html"><img src="site figma/tenis-logo.png" alt="Logo Tênis" class="home"></a>
+            <div class="pesquisar">
+                <form action="pesquisar.hmtl">
+                <input type="text" placeholder="Pesquisar..." id="barra"  >
+                <a class="fa-solid fa-magnifying-glass" id="lupa" ></a>
+            </form>
+            
+            </div>
+            
+            
+            <a class="suporte" href="suporte.html">SUPORTE</a>
             <div class="icons">
-                <i class="fa-solid fa-cart-shopping" alt="carrinho" class="logo"></i>
-                <i class="fa-solid fa-user" alt="user" class="logo"></i>
+                <a href="carrinho.html" class="fa-solid fa-cart-shopping" alt="carrinho" class="logo"></a>
+                <a href="login.html" class="fa-solid fa-user" alt="usuario" class="logo"></a>
             </div>
         </div>
     </header>
 
     <div class="banner">
-        <img src="site figma/Cópia de DESCONTOd (1920 x 300 px).png" alt="banner Tênis" class="logo">
+        <img src="site figma/Cópia de DESCONTOd (1920 x 300 px).png" alt="banner Tênis">
     </div>
 
     <div class="marcas">
-        <img src="site figma/nike.png" alt="Nike">
+        <img src="site figma/nike.png" alt="Nike" class="nike">
         <img src="site figma/adidas.png" alt="Adidas">
         <img src="site figma/puma.png" alt="Puma">
         <img src="site figma/olympikus.png" alt="Olympikus">
