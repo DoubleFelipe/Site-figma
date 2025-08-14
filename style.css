@@ -8,37 +8,44 @@
 
 /*header*/
 
-
-
 .top-bar {
     display: flex;
-    max-width: 100vmax;    
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
-    background-color: #07ecf8;
+    background-color: #07ecf8; 
     
     
 }
 
 .top-bar form {
     position: relative;
-    width: 50vw;
+    flex:400px;
+    margin-right: 20px;
+}
+
+.home {
+    width: 100px;
+    height: 70px;
+
+}
+
+.home:hover{
+    scale: 1.1;
+}
+
+
+.pesquisar {
+    display: flex;
+    flex: 1;
     max-width: 100vw;
-    min-width: 27vw;
-    
+    min-width: 25vw;
 }
 
 .pesquisar input {
     width: 100%;
-    margin: 20px;
+    margin: 0;
     padding: 10px;
     border-radius: 25px;
     border: 1px solid #ccc;
-    
-
-    
-
 }
 
 #lupa {
@@ -47,22 +54,16 @@
     top: 50%;
     right: 0vmin;
     transform: translateY(-50%);
-    pointer-events: none;
-    
 }
 
-
 .suporte {
-    position: relative;
     background-color: #0072bc;
     color: #fff;
     padding: 10px;
     border-radius: 20px;
-    margin-right: 3vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: bold;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    margin-left: 10px;
     
 }
 
@@ -76,32 +77,28 @@
     color: black;
 }
 
-
-
-.logo {
-    width: 50px;
+#carrinho:hover{
+    scale: 1.1;
 }
 
-.home {
-    width: 100px;
-    height: 70px;
+.suporte:hover{
+    scale: 1.1;
+    
 }
-
 
 
 /*banner*/
 
 .banner {
-    padding: 60px;
+    margin-top: 50px;
     position: relative;
 
 }
 
 .banner img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    width: auto;
+    display: flex;
+    height: 100%;
+    width: 100vw;
 
 }
 
@@ -113,6 +110,7 @@
     justify-content: center;
     gap: 20px;
     padding: 30px;
+    
 }
 
 .marcas img {
@@ -123,15 +121,40 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+#adidas:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
+    
+}
+#nike:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
+    
+}
+#puma:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
+    
+}
+#olympikus:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
 
-@media (max-width: 768px)  {
+}
+
+/*responsividade para dispositivos moveis*/
+
+@media (max-width: 900px)  {
     .top-bar {
-    display: flex;
-    max-width: 100vmax;    
-    align-items: center;
-    justify-content: space-between;
+    display: flex;    
     background-color: #07ecf8;
     flex-wrap: wrap;
+    }
+    .suporte {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
     }
     
     
